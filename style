@@ -1,0 +1,17 @@
+
+    body {
+      background-color: #f5e6c4;
+      font-family: Arial;
+      padding: 5%;
+    }
+    h1 {
+      color: #5d4037;
+      text-align: 60%;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .rojo { color: red; }
+    .azul { color: blue; }
+    .verde { color: green; }
+    .fondo { background-color: yellow; }
