@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de MySQL</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="scene"><div class="stars"></div><div class="sun"></div><div class="city"></div><div class="grid-floor"></div></div>
+
+<div class="content-wrap">
+  <div class="container hero" style="padding-top:3rem;">
+    <h1 class="sign-3d" style="font-size:clamp(2.4rem,8vw,4.8rem)">SQL</h1>
+    <p>Desde crear tu primera base de datos hasta armar subconsultas. Elegí un tema para empezar.</p>
+  </div>
+
+  <div class="container pb-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <a class="led-sign" href="01-crear-tablas.html">
+          <div class="idx">CANAL 01</div>
+          <h3>Base de datos y tablas</h3>
+          <p>CREATE DATABASE, USE y CREATE TABLE con sus columnas.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="led-sign" href="02-tipos-de-datos.html">
+          <div class="idx">CANAL 02</div>
+          <h3>Tipos de datos</h3>
+          <p>VARCHAR, TEXT, INT, DECIMAL y DATE: cuándo usar cada uno.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="led-sign" href="03-registros.html">
+          <div class="idx">CANAL 03</div>
+          <h3>Registros</h3>
+          <p>INSERT, UPDATE y DELETE para manejar filas de datos.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="led-sign" href="04-consultas.html">
+          <div class="idx">CANAL 04</div>
+          <h3>Consultas (SELECT)</h3>
+          <p>SELECT, FROM, WHERE, ORDER BY y GROUP BY.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a class="led-sign" href="05-subconsultas.html">
+          <div class="idx">CANAL 05</div>
+          <h3>Subconsultas</h3>
+          <p>Una consulta SELECT anidada dentro de otra.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="secret-spot">
+  <label for="secret-input">código secreto</label>
+  <input id="secret-input" maxlength="5" inputmode="numeric" autocomplete="off">
+  <button onclick="checkCode()">»</button>
+</div>
+
+<script>
+function checkCode(){
+  var val = document.getElementById('secret-input').value.trim();
+  var spot = document.querySelector('.secret-spot');
+  if(val === '37195'){
+    window.location.href = 'aprobado.html';
+  } else {
+    spot.classList.remove('shake'); void spot.offsetWidth; spot.classList.add('shake');
+  }
+}
+document.getElementById('secret-input').addEventListener('keydown', function(e){ if(e.key==='Enter'){ checkCode(); } });
+</script>
+</body>
+</html>
