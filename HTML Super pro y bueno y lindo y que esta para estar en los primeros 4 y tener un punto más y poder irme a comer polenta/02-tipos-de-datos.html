@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipos de datos · Guía de MySQL</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="scene"><div class="stars"></div><div class="sun"></div><div class="city"></div><div class="grid-floor"></div></div>
+
+<div class="content-wrap">
+  <div class="container sign-wrap">
+    <span class="sign-tag">CANAL 02</span>
+    <h1 class="sign-3d">Tipos de Datos</h1>
+  </div>
+
+  <div class="container">
+    <a class="back-btn" href="index.html">&larr; volver</a>
+    <div class="panel mt-3">
+      <div class="table-responsive">
+        <table class="table data-types align-middle mb-0">
+          <thead><tr><th>Tipo</th><th>Uso</th><th>Ejemplo</th></tr></thead>
+          <tbody>
+            <tr><td>VARCHAR(n)</td><td>Texto corto de largo variable, hasta n caracteres.</td><td class="mono">VARCHAR(50)</td></tr>
+            <tr><td>TEXT</td><td>Texto largo, sin límite práctico (párrafos, descripciones).</td><td class="mono">TEXT</td></tr>
+            <tr><td>INT</td><td>Números enteros: ids, cantidades, edades.</td><td class="mono">INT</td></tr>
+            <tr><td>DECIMAL(p,d)</td><td>Números exactos con decimales, ideal para precios.</td><td class="mono">DECIMAL(10,2)</td></tr>
+            <tr><td>DATE</td><td>Fechas en formato AAAA-MM-DD.</td><td class="mono">DATE</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="callout">DECIMAL(10,2) guarda hasta 10 dígitos en total, 2 de ellos decimales — evita errores de redondeo que sí puede tener FLOAT.</div>
+  </div>
+</div>
+
+<span class="secret-digit">7</span>
+</body>
+</html>

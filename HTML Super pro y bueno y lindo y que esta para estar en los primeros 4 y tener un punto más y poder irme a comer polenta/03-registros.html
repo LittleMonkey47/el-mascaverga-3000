@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registros · Guía de MySQL</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="scene"><div class="stars"></div><div class="sun"></div><div class="city"></div><div class="grid-floor"></div></div>
+
+<div class="content-wrap">
+  <div class="container sign-wrap">
+    <span class="sign-tag">CANAL 03</span>
+    <h1 class="sign-3d">Registros</h1>
+  </div>
+
+  <div class="container">
+    <a class="back-btn" href="index.html">&larr; volver</a>
+    <div class="panel mt-3">
+      <h3 class="h5">Insertar</h3>
+      <pre><kw>INSERT INTO</kw> productos (nombre, descripcion, precio, fecha_ingreso)
+<kw>VALUES</kw> (<span class="mono">'Mouse inalámbrico'</span>, <span class="mono">'Mouse con receptor USB'</span>, 15.99, <span class="mono">'2026-01-10'</span>);</pre>
+
+      <h3 class="h5 mt-4">Actualizar</h3>
+      <pre><kw>UPDATE</kw> productos
+<kw>SET</kw> precio = 12.50
+<kw>WHERE</kw> id = 1;</pre>
+
+      <h3 class="h5 mt-4">Eliminar</h3>
+      <pre><kw>DELETE FROM</kw> productos
+<kw>WHERE</kw> id = 1;</pre>
+    </div>
+    <div class="callout">WHERE es clave en UPDATE y DELETE: sin esa cláusula, la sentencia afecta a todas las filas de la tabla.</div>
+  </div>
+</div>
+
+<span class="secret-digit">1</span>
+</body>
+</html>
